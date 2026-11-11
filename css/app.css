@@ -253,3 +253,5 @@ table.data th { font-size: 11px; letter-spacing: 0.06em; text-transform: upperca
 .nodo .btn-amber { color: var(--amber-ink); }
 .nodo .btn-primary { color: var(--paper); }
 #admin-link[hidden], #admin-link.is-hidden { display: none !important; }
+
+.cart-count[hidden] { display: none !important; }
