@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Tornillo hex M8 x 30 zincado x100">
+  <rect width="160" height="160" rx="18" fill="#242424"/>
+  <circle cx="63" cy="50" r="50" fill="#90a4ae" opacity="0.12"/>
+  <ellipse cx="80" cy="72" rx="43" ry="21" fill="none" stroke="#90a4ae" stroke-width="14" transform="rotate(57 80 72)"/><ellipse cx="80" cy="72" rx="18" ry="8" fill="#e8a317"/><text x="12" y="150" font-family="ui-monospace, monospace" font-size="9" fill="#e8a317" opacity="0.85">FER-TOR-M8</text>
+</svg>

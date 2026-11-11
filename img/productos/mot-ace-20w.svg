@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Aceite de motor 20W50 1L">
+  <rect width="160" height="160" rx="18" fill="#2a1c18"/>
+  <circle cx="66" cy="62" r="50" fill="#e85d4c" opacity="0.12"/>
+  <rect x="36" y="40" width="88" height="64" rx="10" fill="#e85d4c" transform="rotate(33 80 72)"/><rect x="48" y="52" width="64" height="40" rx="6" fill="#2a1c18" stroke="#f0c84a" stroke-width="3"/><text x="12" y="150" font-family="ui-monospace, monospace" font-size="9" fill="#f0c84a" opacity="0.85">MOT-ACE-20W</text>
+</svg>

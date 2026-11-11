@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Filtro hidráulico tractor">
+  <rect width="160" height="160" rx="18" fill="#1a2a1c"/>
+  <circle cx="63" cy="42" r="50" fill="#7cb342" opacity="0.12"/>
+  <ellipse cx="80" cy="72" rx="43" ry="21" fill="none" stroke="#7cb342" stroke-width="14" transform="rotate(32 80 72)"/><ellipse cx="80" cy="72" rx="18" ry="8" fill="#c4d59a"/><text x="12" y="150" font-family="ui-monospace, monospace" font-size="9" fill="#c4d59a" opacity="0.85">AGR-FIL-HID</text>
+</svg>

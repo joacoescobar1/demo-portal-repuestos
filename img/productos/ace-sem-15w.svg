@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Aceite semisentético 15W40 4L">
+  <rect width="160" height="160" rx="18" fill="#1c2a38"/>
+  <circle cx="68" cy="45" r="50" fill="#e8a317" opacity="0.12"/>
+  <ellipse cx="80" cy="72" rx="48" ry="26" fill="none" stroke="#e8a317" stroke-width="14" transform="rotate(53 80 72)"/><ellipse cx="80" cy="72" rx="18" ry="8" fill="#8fb4c9"/><text x="12" y="150" font-family="ui-monospace, monospace" font-size="9" fill="#8fb4c9" opacity="0.85">ACE-SEM-15W</text>
+</svg>

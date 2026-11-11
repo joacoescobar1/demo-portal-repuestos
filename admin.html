@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin — Repuestos del Norte (demo)</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="ribbon">Panel de demostración · Los cambios quedan en este navegador, no en un servidor</div>
+  <header class="app-head">
+    <div class="wrap">
+      <div class="row">
+        <a class="brand" href="admin.html">
+          <span class="mark">RN</span>
+          <span><b>Panel del dueño</b><small id="who-name"></small></span>
+        </a>
+        <div class="who" style="margin-left:auto">
+          <a class="btn btn-ghost btn-sm" href="catalogo.html">Ver catálogo</a>
+          <button class="btn btn-ghost btn-sm" type="button" id="btn-salir">Salir</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab" type="button" data-tab="tab-clientes" aria-selected="true">Clientes</button>
+      <button class="tab" type="button" data-tab="tab-listas" aria-selected="false">Recargos y descuentos</button>
+      <button class="tab" type="button" data-tab="tab-import" aria-selected="false">Importar CSV</button>
+    </div>
+
+    <section class="panel active" id="tab-clientes">
+      <h2>Clientes y listas</h2>
+      <p class="meta" style="margin:8px 0 16px">Creá un cliente y asignale la lista que tiene que ver. Los tres usuarios de la demo ya están cargados.</p>
+      <form id="form-cliente" class="form-grid">
+        <div><label for="c-nombre">Nombre del cliente</label><input id="c-nombre" required placeholder="Ej: Taller El Cruce (ficticio)"></div>
+        <div><label for="c-usuario">Usuario</label><input id="c-usuario" required placeholder="elcruce"></div>
+        <div><label for="c-pass">Contraseña</label><input id="c-pass" placeholder="demo"></div>
+        <div><label for="c-lista">Lista de precios</label>
+          <select id="c-lista">
+            <option value="mostrador">Mostrador (consumidor final)</option>
+            <option value="taller">Taller / gremio</option>
+            <option value="mayorista">Mayorista / revendedor</option>
+          </select>
+        </div>
+        <div class="full"><button class="btn btn-primary" type="submit">Guardar cliente</button></div>
+      </form>
+      <p class="meta" id="c-msg"></p>
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Usuario</th><th>Nombre</th><th>Rol</th><th>Lista</th></tr></thead>
+          <tbody id="clientes-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="tab-listas">
+      <h2>Recargo o descuento por lista</h2>
+      <p class="meta" style="margin:8px 0 16px">Se aplica sobre el precio de mostrador. Un número negativo es descuento (el taller y el mayorista de la demo entran con −18% y −32%).</p>
+      <div class="rates">
+        <div class="rate-card"><b>Mostrador</b><label for="r-mostrador">% sobre lista</label><input id="r-mostrador" type="number" step="1"></div>
+        <div class="rate-card"><b>Taller</b><label for="r-taller">% sobre lista</label><input id="r-taller" type="number" step="1"></div>
+        <div class="rate-card"><b>Mayorista</b><label for="r-mayorista">% sobre lista</label><input id="r-mayorista" type="number" step="1"></div>
+      </div>
+      <button class="btn btn-primary" type="button" id="btn-rates" style="margin:16px 0">Guardar porcentajes</button>
+      <p class="meta" id="rates-msg"></p>
+      <h3 style="margin:20px 0 10px">Vista previa de un recorte</h3>
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Código</th><th>Producto</th><th>Mostrador</th><th>Taller</th><th>Mayorista</th></tr></thead>
+          <tbody id="preview-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="tab-import">
+      <h2>Actualizar la lista desde un CSV</h2>
+      <p class="meta" style="margin:8px 0 16px">Columnas: codigo, nombre, marca, rubro, precio_mostrador, stock, unidad. Si el código ya existe, se actualiza; si no, se agrega. Todo queda en este navegador.</p>
+      <p style="margin-bottom:14px"><a class="btn btn-ghost btn-sm" href="data/lista-ejemplo.csv" download>Bajar CSV de ejemplo</a></p>
+      <div class="drop" id="drop">
+        <p>Arrastrá el archivo acá o elegilo</p>
+        <input id="csv-file" type="file" accept=".csv,text/csv" style="margin:12px auto">
+      </div>
+      <p class="meta" id="import-msg" style="margin:12px 0"></p>
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Código</th><th>Nombre</th><th>Marca</th><th>Mostrador</th><th>Stock</th></tr></thead>
+          <tbody id="import-preview"></tbody>
+        </table>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 32px">
+        <button class="btn btn-amber" type="button" id="btn-apply" disabled>Confirmar importación</button>
+        <button class="btn btn-ghost" type="button" id="btn-reset">Volver a la lista original</button>
+      </div>
+    </section>
+  </main>
+  <script src="js/products.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

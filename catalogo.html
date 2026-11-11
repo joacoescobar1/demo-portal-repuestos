@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo — Repuestos del Norte (demo)</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="ribbon">Demo · Los precios que ves son los de tu lista · Pedido por WhatsApp o mail no se envía</div>
+  <header class="app-head">
+    <div class="wrap">
+      <div class="row">
+        <a class="brand" href="catalogo.html">
+          <span class="mark">RN</span>
+          <span><b>Repuestos del Norte</b><small>Portal de clientes</small></span>
+        </a>
+        <div class="search">
+          <input id="q" type="search" placeholder="Buscar por código, nombre o marca" aria-label="Buscar">
+        </div>
+        <div class="who">
+          <span class="badge-list" id="who-list">Lista</span>
+          <span class="hide-sm" id="who-name"></span>
+          <a class="btn btn-ghost btn-sm" id="admin-link" hidden href="admin.html">Admin</a>
+          <button class="btn btn-ghost btn-sm" type="button" id="btn-salir">Salir</button>
+          <button class="btn btn-primary btn-sm cart-btn" type="button" id="btn-cart" aria-label="Ver pedido">Pedido <span class="cart-count" id="cart-count" hidden>0</span></button>
+        </div>
+      </div>
+      <div class="filters">
+        <select id="filtro-rubro" aria-label="Rubro"></select>
+        <select id="filtro-marca" aria-label="Marca"></select>
+        <span class="meta" id="count"></span>
+      </div>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <div class="drawer-bg" id="drawer" hidden>
+    <aside class="drawer" role="dialog" aria-labelledby="cart-title">
+      <h2 id="cart-title">Tu pedido</h2>
+      <p class="meta" style="margin:8px 0 12px">Se arma con los precios de tu lista. En la demo no se envía al negocio.</p>
+      <div id="cart-items"></div>
+      <div class="cart-total"><span>Total</span><span id="cart-total">$0</span></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn btn-wa" type="button" id="btn-wa">Enviar por WhatsApp</button>
+        <button class="btn btn-mail" type="button" id="btn-mail">Enviar por mail</button>
+        <button class="btn btn-ghost" type="button" data-close>Seguir armando</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="modal" id="modal" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <h2 id="modal-title"></h2>
+      <p class="meta" id="modal-intro" style="margin:10px 0"></p>
+      <pre class="preview" id="modal-preview"></pre>
+      <button class="btn btn-amber" type="button" data-close style="margin-top:14px">Entendido</button>
+    </div>
+  </div>
+  <script src="js/products.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Repuestos del Norte — Portal de precios (demo de Nodo Ventas)</title>
+  <meta name="description" content="Demo de un portal de precios para casas de repuestos: cada cliente entra con su usuario y ve su lista. Hecho por Nodo Ventas. Este negocio es de ficción.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <a class="skip" href="#login">Saltar al acceso</a>
+  <div class="ribbon">Sitio de demostración · Repuestos del Norte es un negocio de ficción · No es un local real</div>
+  <div class="hero-dark">
+    <div class="wrap">
+      <div class="topbar">
+        <a class="brand" href="index.html">
+          <span class="mark">RN</span>
+          <span><b>Repuestos del Norte</b><small>Auto · Moto · Agro</small></span>
+        </a>
+        <a class="btn btn-amber btn-sm" href="oferta/">Ver la oferta</a>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <p class="kicker">Portal de precios para clientes</p>
+          <h1>Cada cliente ve su precio. Nadie ve el de al lado.</h1>
+          <p class="lead">Así puede trabajar una casa de repuestos, una ferretería o una distribuidora: le das un usuario a cada cliente, y el taller, el mayorista o el mostrador ven la lista que les corresponde. Esta es una demo, no un local real.</p>
+        </div>
+        <div class="login-card" id="login-card">
+          <h2>Entrar al portal</h2>
+          <p class="hint">Usuarios de demostración. La contraseña de los tres es <b>demo</b>.</p>
+          <div class="demo-users">
+            <button class="chip" type="button" data-user="taller"><b>taller / demo</b><span>Lista taller (−18%)</span></button>
+            <button class="chip" type="button" data-user="mayorista"><b>mayorista / demo</b><span>Lista mayorista (−32%)</span></button>
+            <button class="chip" type="button" data-user="admin"><b>admin / demo</b><span>Panel del dueño</span></button>
+          </div>
+          <form id="login">
+            <label for="usuario">Usuario</label>
+            <input id="usuario" name="usuario" autocomplete="username" required>
+            <label for="password">Contraseña</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required>
+            <p class="err" id="login-err" role="alert"></p>
+            <button class="btn btn-primary" type="submit" style="width:100%;margin-top:8px">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="compare">
+      <div class="wrap">
+        <h2>El mismo repuesto, tres listas</h2>
+        <p class="sub" id="cmp-name">Entrá con taller y después con mayorista: el catálogo es el mismo, el precio no.</p>
+        <table class="price-table">
+          <thead>
+            <tr><th>Lista</th><th>Quién la ve</th><th>Precio</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag tag-c">Mostrador</span></td>
+              <td>Consumidor final</td>
+              <td class="amt" id="cmp-c">—</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-t">Taller</span></td>
+              <td>Usuario <span class="mono">taller / demo</span></td>
+              <td class="amt" id="cmp-t">—</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-m">Mayorista</span></td>
+              <td>Usuario <span class="mono">mayorista / demo</span></td>
+              <td class="amt" id="cmp-m">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="steps">
+        <article class="step"><i>01</i><h3>Le das un usuario</h3><p>El negocio crea el cliente, le asigna la lista (mostrador, taller, mayorista o revendedor) y le pasa usuario y contraseña.</p></article>
+        <article class="step"><i>02</i><h3>Ve su catálogo</h3><p>Fotos, código, marca, stock aproximado y el precio que le corresponde. Busca por rubro o por marca y arma el pedido.</p></article>
+        <article class="step"><i>03</i><h3>Te llega el pedido</h3><p>Lo manda por WhatsApp o por mail, ya armado. Vos actualizás la lista desde un Excel o un CSV, con recargo o descuento por lista.</p></article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="wrap">
+    <div class="nodo">
+      <div>
+        <strong>Demo hecha por Nodo Ventas</strong>
+        <span>¿Querés un portal así para tu casa de repuestos o ferretería? <a href="mailto:nodoventas.ar@gmail.com">nodoventas.ar@gmail.com</a></span>
+      </div>
+      <a class="btn btn-amber" href="oferta/">Ver oferta</a>
+    </div>
+    <p class="fine">Repuestos del Norte es un nombre de ficción. Imágenes generadas para la demo. 2026 · Nodo Ventas.</p>
+  </footer>
+  <script src="js/products.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
