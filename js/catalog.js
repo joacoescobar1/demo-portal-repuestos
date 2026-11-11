@@ -5,8 +5,11 @@
   const $ = (id) => document.getElementById(id);
   $("who-name").textContent = s.nombre;
   $("who-list").textContent = "Lista " + s.lista;
-  if (s.rol === "admin") {
-    $("admin-link").hidden = false;
+  const adminLink = $("admin-link");
+  if (adminLink) {
+    const show = s.rol === "admin";
+    adminLink.hidden = !show;
+    adminLink.style.display = show ? "" : "none";
   }
 
   let q = "", rubro = "", marca = "";

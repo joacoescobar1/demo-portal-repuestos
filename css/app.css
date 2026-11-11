@@ -249,3 +249,7 @@ table.data th { font-size: 11px; letter-spacing: 0.06em; text-transform: upperca
   .app-head .row { flex-wrap: wrap; padding: 8px 0; }
   .search { order: 3; flex-basis: 100%; }
 }
+
+.nodo .btn-amber { color: var(--amber-ink); }
+.nodo .btn-primary { color: var(--paper); }
+#admin-link[hidden], #admin-link.is-hidden { display: none !important; }
