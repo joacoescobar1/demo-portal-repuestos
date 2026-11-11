@@ -3,100 +3,138 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Oferta · Portal de precios — Nodo Ventas</title>
-  <meta name="description" content="Tres paquetes para un portal de precios con listas por cliente: armado y fee mensual. Precios de lanzamiento en pesos.">
+  <title>Portal de precios para casas de repuestos · Nodo Ventas</title>
+  <meta name="description" content="Nodo Ventas arma portales de precios para casas de repuestos, ferreterías y distribuidoras del interior: cada cliente entra con su usuario, ve su lista con fotos y manda el pedido por WhatsApp. Armado más fee mensual.">
   <meta name="robots" content="noindex, nofollow">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#F6F7FB">
+  <link rel="icon" href="../img/nodo/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Geist:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nodo.css">
 </head>
-<body>
-  <div class="ribbon">Precios de lanzamiento · Noviembre 2026 · Se confirman por mail según tu caso</div>
-  <header class="app-head">
-    <div class="wrap">
-      <div class="row">
-        <a class="brand" href="../">
-          <span class="mark">NV</span>
-          <span><b>Nodo Ventas</b><small>Portal de precios</small></span>
-        </a>
-        <div class="who" style="margin-left:auto">
-          <a class="btn btn-ghost btn-sm" href="../">Ver la demo</a>
-          <a class="btn btn-primary btn-sm" href="mailto:nodoventas.ar@gmail.com?subject=Portal%20de%20precios">Escribinos</a>
-        </div>
-      </div>
+<body class="nv">
+  <header class="nv-header">
+    <div class="nv-wrap">
+      <a class="nv-logo" href="./"><img src="../img/nodo/nodo-ventas-logo.svg" alt="Nodo Ventas" width="182" height="30"></a>
+      <nav class="nv-nav">
+        <a class="nv-hide-sm" href="../">Ver la demo</a>
+        <a class="nv-btn nv-btn-primary" href="mailto:nodoventas.ar@gmail.com?subject=Portal%20de%20precios%20para%20mi%20negocio">Escribinos</a>
+      </nav>
     </div>
   </header>
+
   <main>
-    <section class="compare">
-      <div class="wrap">
-        <p class="kicker" style="color:var(--amber)">Tres formas de arrancar</p>
-        <h2>Un portal con tu marca, no una planilla que se recorre por WhatsApp.</h2>
-        <p class="sub">Armado a medida e importación de tu lista, más un fee mensual de hosting, mantenimiento y soporte. Pensado para casas de repuestos, ferreterías y distribuidoras del interior. Los precios son de lanzamiento y se confirman por mail; pueden no incluir IVA.</p>
-        <div class="plans">
-          <article class="plan">
-            <p class="kicker">01</p>
+    <section class="nv-hero">
+      <div class="nv-wrap">
+        <div>
+          <h1>Que cada cliente vea <span class="nv-mark">su precio</span>, y nadie el de al lado.</h1>
+          <p class="nv-lead">Un portal con tu marca para casas de repuestos, ferreterías y distribuidoras. El taller, el mayorista y el mostrador entran con su usuario, ven su lista con foto y stock, y te mandan el pedido armado por WhatsApp.</p>
+          <div class="nv-cta-row">
+            <a class="nv-btn nv-btn-primary" href="#paquetes">Ver los paquetes</a>
+            <a class="nv-btn nv-btn-line" href="../">Probar la demo</a>
+          </div>
+          <p class="nv-note">Probá con <b>taller</b> y después con <b>mayorista</b> (contraseña <b>demo</b>): el mismo filtro aparece a $6.970 y a $5.780. Repuestos del Norte es un negocio de ficción.</p>
+        </div>
+        <div class="nv-device nv-device-wide"><img src="../img/nodo/demo-catalogo.webp" alt="Catálogo del portal con precios de la lista taller" width="1280" height="820"></div>
+      </div>
+    </section>
+
+    <section class="nv-section" id="paquetes">
+      <div class="nv-wrap">
+        <div class="nv-head">
+          <h2>Armado más un fee mensual chico</h2>
+          <p>El armado se paga una vez. El fee cubre hosting, mantenimiento y soporte. No es un ERP ni un sistema de facturación: es tu lista de precios, ordenada y privada para cada cliente.</p>
+        </div>
+        <div class="nv-plans">
+          <article class="nv-plan">
             <h3>Portal de clientes</h3>
-            <div class="price">$320.000</div>
-            <div class="fee">de armado + $29.000 por mes</div>
-            <p>El dueño carga y actualiza la lista. Ideal para arrancar con tres tipos de cliente.</p>
+            <p class="nv-for">Vos cargás y actualizás la lista desde un Excel o CSV.</p>
+            <p class="nv-price">$320.000<small>armado</small></p>
+            <p class="nv-fee">+ $29.000 por mes</p>
             <ul>
-              <li>Portal con tu marca, en celular</li>
-              <li>Usuarios y 3 listas (mostrador, taller, mayorista)</li>
+              <li>Portal con tu marca, pensado para el celular</li>
+              <li>Usuarios y 3 listas: mostrador, taller, mayorista</li>
               <li>Catálogo con fotos, código, marca y stock</li>
               <li>Pedido por WhatsApp o mail</li>
               <li>Importación CSV a tu cargo</li>
-              <li>Hosting, mantenimiento y soporte</li>
             </ul>
-            <a class="btn btn-ghost" href="mailto:nodoventas.ar@gmail.com?subject=Paquete%20Portal%20de%20clientes">Quiero este</a>
+            <a class="nv-btn nv-btn-line" href="mailto:nodoventas.ar@gmail.com?subject=Paquete%20Portal%20de%20clientes">Quiero este paquete</a>
           </article>
-          <article class="plan featured">
-            <p class="kicker">02 · El más pedido</p>
+          <article class="nv-plan nv-featured">
+            <span class="nv-flag">Recomendado</span>
             <h3>Portal + importación</h3>
-            <div class="price">$450.000</div>
-            <div class="fee">de armado + $49.000 por mes</div>
-            <p>Nodo Ventas te arma el portal e importa la lista inicial. Te acompañamos en las actualizaciones.</p>
+            <p class="nv-for">Nosotros importamos tu lista inicial y te ayudamos con las siguientes.</p>
+            <p class="nv-price">$450.000<small>armado</small></p>
+            <p class="nv-fee">+ $49.000 por mes</p>
             <ul>
-              <li>Todo lo del Portal de clientes</li>
+              <li>Todo lo de Portal de clientes</li>
               <li>Importación inicial de tu Excel o CSV</li>
               <li>Recargo o descuento por lista, configurado</li>
-              <li>Ayuda en las siguientes actualizaciones</li>
+              <li>Ayuda en cada actualización</li>
               <li>Soporte prioritario</li>
-              <li>Hosting y mantenimiento</li>
             </ul>
-            <a class="btn btn-amber" href="mailto:nodoventas.ar@gmail.com?subject=Paquete%20Portal%20+%20importacion">Quiero este</a>
+            <a class="nv-btn nv-btn-lime" href="mailto:nodoventas.ar@gmail.com?subject=Paquete%20Portal%20%2B%20importacion">Quiero este paquete</a>
           </article>
-          <article class="plan">
-            <p class="kicker">03</p>
+          <article class="nv-plan">
             <h3>Portal con acompañamiento</h3>
-            <div class="price">$580.000</div>
-            <div class="fee">de armado + $69.000 por mes</div>
-            <p>Para quien actualiza listas seguido o trabaja con más de un proveedor. Nodo se ocupa de dejarlas al día.</p>
+            <p class="nv-for">Para quien cambia precios seguido o trabaja con varios proveedores.</p>
+            <p class="nv-price">$580.000<small>armado</small></p>
+            <p class="nv-fee">+ $69.000 por mes</p>
             <ul>
               <li>Todo lo de Portal + importación</li>
               <li>Actualizaciones de lista incluidas en el mes</li>
-              <li>Más de una lista de proveedor, unificada</li>
+              <li>Listas de varios proveedores, unificadas</li>
               <li>Capacitación corta para vos o tu encargado</li>
               <li>Soporte prioritario</li>
-              <li>Hosting y mantenimiento</li>
             </ul>
-            <a class="btn btn-ghost" href="mailto:nodoventas.ar@gmail.com?subject=Paquete%20Portal%20con%20acompanamiento">Quiero este</a>
+            <a class="nv-btn nv-btn-line" href="mailto:nodoventas.ar@gmail.com?subject=Paquete%20Portal%20con%20acompanamiento">Quiero este paquete</a>
           </article>
         </div>
-        <p class="sub" style="margin-top:28px">El 50% del armado se paga al arrancar y el 50% al publicar. El fee mensual cubre hosting, mantenimiento y soporte; no es un sistema de facturación ni un ERP. El dominio queda a tu nombre y se paga aparte.</p>
+      </div>
+    </section>
+
+    <section class="nv-section" style="padding-top:24px">
+      <div class="nv-wrap">
+        <div class="nv-head"><h2>Cómo arrancamos</h2></div>
+        <div class="nv-steps">
+          <div class="nv-step"><h3>Nos pasás tu lista</h3><p>El Excel o CSV que ya usás, y cómo armás los precios de cada tipo de cliente.</p></div>
+          <div class="nv-step"><h3>Armamos el portal</h3><p>Con tu marca, tus rubros y tus fotos. Cargamos los primeros clientes con vos.</p></div>
+          <div class="nv-step"><h3>Le pasás el usuario a cada cliente</h3><p>Desde ese día ven su precio y te mandan el pedido ordenado.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="nv-section" style="padding-top:24px">
+      <div class="nv-wrap nv-terms">
+        <div class="nv-term"><h3>Mitad y mitad</h3><p>50% del armado al arrancar y 50% al publicar. Precios de lanzamiento (noviembre 2026); se confirman por mail según tu caso y pueden no incluir IVA.</p></div>
+        <div class="nv-term"><h3>Tu lista es tuya</h3><p>Los datos y el dominio quedan a tu nombre. Si dejás el servicio, te llevás tu lista exportada en CSV.</p></div>
+      </div>
+    </section>
+
+    <section class="nv-section" style="padding-top:24px">
+      <div class="nv-wrap">
+        <div class="nv-cta">
+          <div>
+            <h2>¿Lo vemos con tu lista?</h2>
+            <p>Mandanos el nombre del negocio, la ciudad y cuántos clientes con cuenta tenés. Te respondemos con una propuesta concreta.</p>
+            <a class="nv-mail" href="mailto:nodoventas.ar@gmail.com">nodoventas.ar@gmail.com</a>
+          </div>
+          <a class="nv-btn nv-btn-lime" href="mailto:nodoventas.ar@gmail.com?subject=Portal%20de%20precios%20para%20mi%20negocio">Escribir a Nodo Ventas</a>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="wrap">
-    <div class="nodo">
-      <div>
-        <strong>Demo hecha por Nodo Ventas</strong>
-        <span>¿Querés un portal así? <a href="mailto:nodoventas.ar@gmail.com">nodoventas.ar@gmail.com</a></span>
-      </div>
-      <a class="btn btn-amber" href="../">Abrir la demo</a>
+
+  <footer class="nv-footer">
+    <div class="nv-wrap">
+      <img src="../img/nodo/nodo-ventas-logo.svg" alt="Nodo Ventas" width="146" height="24">
+      <p class="nv-disclaimer">Precios en pesos argentinos. Repuestos del Norte es un negocio de ficción creado por Nodo Ventas como demo; las marcas de productos son de fantasía. Fotos de la demo: Unsplash.</p>
     </div>
-    <p class="fine">Precios en pesos argentinos, noviembre 2026. 2026 · Nodo Ventas.</p>
   </footer>
+  <script>
+    const h = document.querySelector(".nv-header");
+    addEventListener("scroll", () => h.classList.toggle("scrolled", scrollY > 8), { passive: true });
+  </script>
 </body>
 </html>

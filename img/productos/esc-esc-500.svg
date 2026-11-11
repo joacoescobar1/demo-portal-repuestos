@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Escobillas delanteras 500 mm par">
-  <rect width="160" height="160" rx="18" fill="#1c2a38"/>
-  <circle cx="61" cy="50" r="50" fill="#e8a317" opacity="0.12"/>
-  <rect x="36" y="40" width="88" height="64" rx="10" fill="#e8a317" transform="rotate(17 80 72)"/><rect x="48" y="52" width="64" height="40" rx="6" fill="#1c2a38" stroke="#8fb4c9" stroke-width="3"/><text x="12" y="150" font-family="ui-monospace, monospace" font-size="9" fill="#8fb4c9" opacity="0.85">ESC-ESC-500</text>
-</svg>

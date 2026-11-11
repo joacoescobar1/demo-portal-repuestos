@@ -96,7 +96,7 @@
     if (!pending) return;
     const { list, added, updated } = RDN.mergeProducts(RDN.products(), pending);
     RDN.setProducts(list);
-    $("import-msg").textContent = `Importación hecha en este navegador: ${added.length} nuevos, ${updated.length} actualizados. Total: ${list.length}.`;
+    $("import-msg").textContent = `Importación lista: ${added.length} ${added.length === 1 ? "producto nuevo" : "productos nuevos"}, ${new Set(updated).size} actualizados. Catálogo: ${list.length} productos.`;
     pending = null;
     $("btn-apply").disabled = true;
     renderPreview();

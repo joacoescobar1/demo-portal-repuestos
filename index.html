@@ -2,103 +2,119 @@
 <html lang="es-AR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Repuestos del Norte — Portal de precios (demo de Nodo Ventas)</title>
-  <meta name="description" content="Demo de un portal de precios para casas de repuestos: cada cliente entra con su usuario y ve su lista. Hecho por Nodo Ventas. Este negocio es de ficción.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Repuestos del Norte · Portal de clientes</title>
+  <meta name="description" content="Portal de clientes de Repuestos del Norte: cada cliente entra con su usuario, ve su lista de precios con fotos y stock, y arma el pedido por WhatsApp. Sitio demo creado por Nodo Ventas.">
   <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0E3B43">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/fotos/deposito.webp">
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  <a class="skip" href="#login">Saltar al acceso</a>
-  <div class="ribbon">Sitio de demostración · Repuestos del Norte es un negocio de ficción · No es un local real</div>
-  <div class="hero-dark">
-    <div class="wrap">
-      <div class="topbar">
+  <a class="skip" href="#login">Saltar al ingreso</a>
+  <div class="landing">
+    <section class="landing-photo on-dark">
+      <img src="img/fotos/deposito.webp" alt="Depósito con estanterías altas llenas de mercadería" width="1800" height="1100" fetchpriority="high">
+      <div class="landing-top">
         <a class="brand" href="index.html">
-          <span class="mark">RN</span>
-          <span><b>Repuestos del Norte</b><small>Auto · Moto · Agro</small></span>
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#F2A516"/><path d="M32 11l18.2 10.5v21L32 53 13.8 42.5v-21z" fill="#0E3B43"/><circle cx="32" cy="32" r="8.5" fill="#F2A516"/></svg>
+          <span><b>Repuestos del Norte</b><small>Auto · Moto · Agro · Ferretería</small></span>
         </a>
-        <a class="btn btn-amber btn-sm" href="oferta/">Ver la oferta</a>
+        <a class="demo-tag" href="oferta/" title="Sitio demo hecho por Nodo Ventas">Demo</a>
       </div>
-      <div class="hero-grid">
-        <div>
-          <p class="kicker">Portal de precios para clientes</p>
-          <h1>Cada cliente ve su precio. Nadie ve el de al lado.</h1>
-          <p class="lead">Así puede trabajar una casa de repuestos, una ferretería o una distribuidora: le das un usuario a cada cliente, y el taller, el mayorista o el mostrador ven la lista que les corresponde. Esta es una demo, no un local real.</p>
-        </div>
-        <div class="login-card" id="login-card">
-          <h2>Entrar al portal</h2>
-          <p class="hint">Usuarios de demostración. La contraseña de los tres es <b>demo</b>.</p>
-          <div class="demo-users">
-            <button class="chip" type="button" data-user="taller"><b>taller / demo</b><span>Lista taller (−18%)</span></button>
-            <button class="chip" type="button" data-user="mayorista"><b>mayorista / demo</b><span>Lista mayorista (−32%)</span></button>
-            <button class="chip" type="button" data-user="admin"><b>admin / demo</b><span>Panel del dueño</span></button>
-          </div>
-          <form id="login">
-            <label for="usuario">Usuario</label>
-            <input id="usuario" name="usuario" autocomplete="username" required>
-            <label for="password">Contraseña</label>
-            <input id="password" name="password" type="password" autocomplete="current-password" required>
-            <p class="err" id="login-err" role="alert"></p>
-            <button class="btn btn-primary" type="submit" style="width:100%;margin-top:8px">Entrar</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <main>
-    <section class="compare">
-      <div class="wrap">
-        <h2>El mismo repuesto, tres listas</h2>
-        <p class="sub" id="cmp-name">Entrá con taller y después con mayorista: el catálogo es el mismo, el precio no.</p>
-        <table class="price-table">
-          <thead>
-            <tr><th>Lista</th><th>Quién la ve</th><th>Precio</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="tag tag-c">Mostrador</span></td>
-              <td>Consumidor final</td>
-              <td class="amt" id="cmp-c">—</td>
-            </tr>
-            <tr>
-              <td><span class="tag tag-t">Taller</span></td>
-              <td>Usuario <span class="mono">taller / demo</span></td>
-              <td class="amt" id="cmp-t">—</td>
-            </tr>
-            <tr>
-              <td><span class="tag tag-m">Mayorista</span></td>
-              <td>Usuario <span class="mono">mayorista / demo</span></td>
-              <td class="amt" id="cmp-m">—</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="landing-copy">
+        <h1>Tu lista de precios, al día y a un toque.</h1>
+        <p>Entrá con tu usuario y mirá el precio de tu cuenta, con foto y stock. Armá el pedido y mandalo por WhatsApp sin esperar que te pasen la lista.</p>
+        <ul class="landing-facts">
+          <li>Precio según tu cuenta</li>
+          <li>Más de 50 productos con foto</li>
+          <li>Pedido por WhatsApp</li>
+        </ul>
       </div>
     </section>
 
-    <div class="wrap">
-      <div class="steps">
-        <article class="step"><i>01</i><h3>Le das un usuario</h3><p>El negocio crea el cliente, le asigna la lista (mostrador, taller, mayorista o revendedor) y le pasa usuario y contraseña.</p></article>
-        <article class="step"><i>02</i><h3>Ve su catálogo</h3><p>Fotos, código, marca, stock aproximado y el precio que le corresponde. Busca por rubro o por marca y arma el pedido.</p></article>
-        <article class="step"><i>03</i><h3>Te llega el pedido</h3><p>Lo manda por WhatsApp o por mail, ya armado. Vos actualizás la lista desde un Excel o un CSV, con recargo o descuento por lista.</p></article>
+    <section class="landing-form" id="login">
+      <div class="login-card">
+        <h2>Ingresar</h2>
+        <p class="hint">Portal de clientes de Repuestos del Norte.</p>
+        <form id="login-form" novalidate>
+          <label for="usuario">Usuario</label>
+          <input class="field" id="usuario" name="usuario" autocomplete="username" autocapitalize="none" required>
+          <label for="password">Contraseña</label>
+          <input class="field" id="password" name="password" type="password" autocomplete="current-password" required>
+          <p class="err" id="login-err" role="alert"></p>
+          <button class="btn btn-primary" type="submit">Entrar al portal</button>
+        </form>
+        <div class="demo-users">
+          <p>Cuentas de prueba (contraseña <b>demo</b>). Tocá una para completar:</p>
+          <div class="chips">
+            <button class="chip" type="button" data-user="taller"><b>taller</b><span>Lista taller · −18%</span></button>
+            <button class="chip" type="button" data-user="mayorista"><b>mayorista</b><span>Lista mayorista · −32%</span></button>
+            <button class="chip" type="button" data-user="admin"><b>admin</b><span>Panel del dueño</span></button>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+  </div>
+
+  <main>
+    <section class="band">
+      <div class="wrap">
+        <div class="band-head">
+          <h2>El mismo filtro, tres precios</h2>
+          <p>Cada cliente ve solo su lista. El mostrador paga precio de lista; el taller y el mayorista, el descuento que les corresponde.</p>
+        </div>
+        <div class="compare">
+          <figure class="compare-photo" style="margin:0">
+            <img src="img/fotos/filtro-aceite.webp" alt="Filtro de aceite" loading="lazy" width="900" height="900">
+            <figcaption><b id="cmp-name">Filtro de aceite 1.6 16v</b><span id="cmp-code">FIL-ACE-160 · FiltroSur</span></figcaption>
+          </figure>
+          <div class="tiers">
+            <div class="tier t-c"><div><div class="tier-name"><i></i>Mostrador</div><div class="who">Consumidor final</div></div><div><div class="amt" id="cmp-c">$8.500</div><div class="off">Precio de lista</div></div></div>
+            <div class="tier t-t"><div><div class="tier-name"><i></i>Taller</div><div class="who">Cuenta taller</div></div><div><div class="amt" id="cmp-t">$6.970</div><div class="off">18% menos</div></div></div>
+            <div class="tier t-m"><div><div class="tier-name"><i></i>Mayorista</div><div class="who">Cuenta mayorista</div></div><div><div class="amt" id="cmp-m">$5.780</div><div class="off">32% menos</div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" style="padding-top:0">
+      <div class="wrap">
+        <div class="band-head"><h2>Cuatro rubros, un solo pedido</h2><p>Buscá por código, nombre o marca, o filtrá por rubro.</p></div>
+        <div class="rubros">
+          <div class="rubro"><img src="img/fotos/freno-caliper.webp" alt="Disco y caliper de freno" loading="lazy"><div><h3>Autopartes</h3><span>Filtros, frenos, correas, baterías</span></div></div>
+          <div class="rubro"><img src="img/fotos/moto-cadena.webp" alt="Cadena y corona de moto" loading="lazy"><div><h3>Moto</h3><span>Transmisión, frenos, cubiertas</span></div></div>
+          <div class="rubro"><img src="img/fotos/tractor.webp" alt="Tractor trabajando en el campo" loading="lazy"><div><h3>Agro</h3><span>Correas, hidráulica, rodamientos</span></div></div>
+          <div class="rubro"><img src="img/fotos/tornillos.webp" alt="Bulones y tuercas" loading="lazy"><div><h3>Ferretería</h3><span>Bulonería, precintos, insumos</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" style="padding-top:0">
+      <div class="wrap">
+        <div class="how">
+          <article><b>1</b><h3>Entrás con tu usuario</h3><p>El negocio te da de alta y te asigna tu lista. Nadie ve el precio de otra cuenta.</p></article>
+          <article><b>2</b><h3>Armás el pedido</h3><p>Con foto, código, marca y stock aproximado. El total se calcula con tu precio.</p></article>
+          <article><b>3</b><h3>Lo mandás por WhatsApp</h3><p>El pedido llega ordenado al mostrador, listo para preparar.</p></article>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="wrap">
-    <div class="nodo">
-      <div>
-        <strong>Demo hecha por Nodo Ventas</strong>
-        <span>¿Querés un portal así para tu casa de repuestos o ferretería? <a href="mailto:nodoventas.ar@gmail.com">nodoventas.ar@gmail.com</a></span>
+  <footer class="site-foot">
+    <div class="wrap">
+      <div><b style="color:#fff;font-family:var(--display);font-size:22px">Repuestos del Norte</b><p style="margin-top:4px">Portal de clientes</p></div>
+      <div class="made-by">
+        <span>Portal demo diseñado por</span>
+        <a href="oferta/" aria-label="Nodo Ventas, ver la oferta"><img src="img/nodo/nodo-ventas-logo-blanco.svg" alt="Nodo Ventas" width="146" height="24"></a>
+        <a class="link" href="oferta/">Quiero un portal así para mi negocio</a>
       </div>
-      <a class="btn btn-amber" href="oferta/">Ver oferta</a>
+      <p class="legal">Repuestos del Norte es un negocio de ficción creado por Nodo Ventas para mostrar el servicio. Marcas de productos de fantasía. Fotos: Unsplash (ver <a href="CREDITS.md">créditos</a>).</p>
     </div>
-    <p class="fine">Repuestos del Norte es un nombre de ficción. Imágenes generadas para la demo. 2026 · Nodo Ventas.</p>
   </footer>
   <script src="js/products.js"></script>
   <script src="js/core.js"></script>

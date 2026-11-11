@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Filtro de combustible agrícola">
-  <rect width="160" height="160" rx="18" fill="#1a2a1c"/>
-  <circle cx="55" cy="51" r="50" fill="#7cb342" opacity="0.12"/>
-  <circle cx="80" cy="72" r="22" fill="none" stroke="#7cb342" stroke-width="10"/><circle cx="80" cy="72" r="12" fill="#c4d59a"/><rect x="72" y="20" width="16" height="24" rx="3" fill="#7cb342"/><text x="12" y="150" font-family="ui-monospace, monospace" font-size="9" fill="#c4d59a" opacity="0.85">AGR-FIL-COM</text>
-</svg>

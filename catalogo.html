@@ -2,68 +2,100 @@
 <html lang="es-AR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Catálogo — Repuestos del Norte (demo)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Catálogo · Repuestos del Norte</title>
   <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#FFFFFF">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  <div class="ribbon">Demo · Los precios que ves son los de tu lista · Pedido por WhatsApp o mail no se envía</div>
   <header class="app-head">
     <div class="wrap">
       <div class="row">
         <a class="brand" href="catalogo.html">
-          <span class="mark">RN</span>
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0E3B43"/><path d="M32 11l18.2 10.5v21L32 53 13.8 42.5v-21z" fill="#F2A516"/><circle cx="32" cy="32" r="8.5" fill="#0E3B43"/></svg>
           <span><b>Repuestos del Norte</b><small>Portal de clientes</small></span>
         </a>
         <div class="search">
-          <input id="q" type="search" placeholder="Buscar por código, nombre o marca" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input id="q" type="search" placeholder="Buscar por código, nombre o marca" aria-label="Buscar productos">
         </div>
         <div class="who">
-          <span class="badge-list" id="who-list">Lista</span>
-          <span class="hide-sm" id="who-name"></span>
-          <a class="btn btn-ghost btn-sm" id="admin-link" hidden href="admin.html">Admin</a>
-          <button class="btn btn-ghost btn-sm" type="button" id="btn-salir">Salir</button>
+          <div class="who-card"><b id="who-name"></b><span class="badge-list" id="who-list">Lista</span></div>
+          <a class="btn btn-ghost btn-sm" id="admin-link" hidden href="admin.html">Panel</a>
+          <button class="btn btn-ghost btn-sm hide-sm" type="button" id="btn-salir">Salir</button>
           <button class="btn btn-primary btn-sm cart-btn" type="button" id="btn-cart" aria-label="Ver pedido">Pedido <span class="cart-count" id="cart-count" hidden>0</span></button>
         </div>
       </div>
-      <div class="filters">
-        <select id="filtro-rubro" aria-label="Rubro"></select>
+      <div class="filters" id="filters">
+        <div id="rubros" style="display:flex;gap:8px"></div>
         <select id="filtro-marca" aria-label="Marca"></select>
         <span class="meta" id="count"></span>
       </div>
     </div>
   </header>
+
   <main class="wrap">
-    <div class="grid" id="grid"></div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+    <p class="hint" style="padding-bottom:40px">Repuestos del Norte es un negocio de ficción: sitio demo de <a href="oferta/">Nodo Ventas</a>. <button class="btn-link" type="button" id="btn-salir-2" style="border:0;background:none;padding:0;text-decoration:underline;color:inherit">Salir</button></p>
   </main>
 
   <div class="drawer-bg" id="drawer" hidden>
-    <aside class="drawer" role="dialog" aria-labelledby="cart-title">
-      <h2 id="cart-title">Tu pedido</h2>
-      <p class="meta" style="margin:8px 0 12px">Se arma con los precios de tu lista. En la demo no se envía al negocio.</p>
+    <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="drawer-head">
+        <div><h2 id="cart-title">Tu pedido</h2><p id="cart-sub">Con los precios de tu lista</p></div>
+        <button class="x" type="button" data-close aria-label="Cerrar">×</button>
+      </div>
       <div id="cart-items"></div>
-      <div class="cart-total"><span>Total</span><span id="cart-total">$0</span></div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap">
-        <button class="btn btn-wa" type="button" id="btn-wa">Enviar por WhatsApp</button>
+      <div class="drawer-foot">
+        <div class="cart-total"><span>Total</span><b id="cart-total">$0</b></div>
+        <button class="btn btn-wa" type="button" id="btn-wa">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.1c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.2c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.2 1.2-4-.3-.4a10.4 10.4 0 0 1-1.6-5.6C5.4 9.9 10.1 5.3 16 5.3s10.6 4.6 10.6 10.3S21.9 26.2 16 26.2zm5.8-7.7c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 2.9 1.1 3.4.9 4 .8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+          Enviar pedido por WhatsApp
+        </button>
         <button class="btn btn-mail" type="button" id="btn-mail">Enviar por mail</button>
-        <button class="btn btn-ghost" type="button" data-close>Seguir armando</button>
       </div>
     </aside>
   </div>
 
-  <div class="modal" id="modal" hidden>
-    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-      <h2 id="modal-title"></h2>
-      <p class="meta" id="modal-intro" style="margin:10px 0"></p>
-      <pre class="preview" id="modal-preview"></pre>
-      <button class="btn btn-amber" type="button" data-close style="margin-top:14px">Entendido</button>
+  <div class="wa-screen" id="wa-screen" hidden>
+    <div class="wa-stage">
+      <div class="wa-phone">
+        <div class="wa-app">
+          <div class="wa-top">
+            <span class="back" aria-hidden="true">‹</span>
+            <span class="ava"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" fill="#0E3B43"/><path d="M32 13l16.5 9.5v19L32 51 15.5 41.5v-19z" fill="#F2A516"/><circle cx="32" cy="32" r="7.5" fill="#0E3B43"/></svg></span>
+            <span><b>Repuestos del Norte</b><small id="wa-status">en línea</small></span>
+            <span class="icons" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11l-4 4z"/></svg><svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2c1.1.4 2.3.6 3.6.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.6 21 3 13.4 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.6 3.6a1 1 0 0 1-.2 1l-2.3 2.2z"/></svg></span>
+          </div>
+          <div class="wa-msgs" id="wa-msgs"></div>
+          <div class="wa-input"><span>Mensaje</span><i><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12h-2z"/></svg></i></div>
+        </div>
+      </div>
+      <div class="wa-side">
+        <h2>Pedido enviado</h2>
+        <p>El mostrador recibe el pedido ordenado, con código, cantidad y el precio de tu lista.</p>
+        <a class="btn btn-wa" id="wa-open" href="#" target="_blank" rel="noopener">Abrir en WhatsApp</a>
+        <button class="btn btn-ghost" type="button" id="wa-done">Volver al catálogo</button>
+        <p class="fine">Demo: “Abrir en WhatsApp” usa un número de prueba (+54 9 11 0000-0000), no el de un negocio real.</p>
+      </div>
     </div>
   </div>
+
+  <div class="modal" id="modal" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <h2 id="modal-title">Pedido por mail</h2>
+      <p class="hint" id="modal-intro" style="margin:8px 0 12px">Así le llega el mail al negocio. En la demo no se envía.</p>
+      <pre class="preview" id="modal-preview"></pre>
+      <button class="btn btn-primary" type="button" data-close style="margin-top:14px;width:100%">Listo</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
   <script src="js/products.js"></script>
   <script src="js/core.js"></script>
   <script src="js/catalog.js"></script>

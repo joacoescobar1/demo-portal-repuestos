@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#12151a"/>
-  <text x="16" y="22" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="11" fill="#e8a317">RN</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0E3B43"/><path d="M32 11l18.2 10.5v21L32 53 13.8 42.5v-21z" fill="#F2A516"/><circle cx="32" cy="32" r="8.5" fill="#0E3B43"/></svg>

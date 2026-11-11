@@ -3,21 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin — Repuestos del Norte (demo)</title>
+  <title>Panel del dueño · Repuestos del Norte</title>
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  <div class="ribbon">Panel de demostración · Los cambios quedan en este navegador, no en un servidor</div>
   <header class="app-head">
     <div class="wrap">
       <div class="row">
         <a class="brand" href="admin.html">
-          <span class="mark">RN</span>
+          <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0E3B43"/><path d="M32 11l18.2 10.5v21L32 53 13.8 42.5v-21z" fill="#F2A516"/><circle cx="32" cy="32" r="8.5" fill="#0E3B43"/></svg>
           <span><b>Panel del dueño</b><small id="who-name"></small></span>
         </a>
         <div class="who" style="margin-left:auto">
@@ -38,7 +37,7 @@
       <h2>Clientes y listas</h2>
       <p class="meta" style="margin:8px 0 16px">Creá un cliente y asignale la lista que tiene que ver. Los tres usuarios de la demo ya están cargados.</p>
       <form id="form-cliente" class="form-grid">
-        <div><label for="c-nombre">Nombre del cliente</label><input id="c-nombre" required placeholder="Ej: Taller El Cruce (ficticio)"></div>
+        <div><label for="c-nombre">Nombre del cliente</label><input id="c-nombre" required placeholder="Taller El Cruce"></div>
         <div><label for="c-usuario">Usuario</label><input id="c-usuario" required placeholder="elcruce"></div>
         <div><label for="c-pass">Contraseña</label><input id="c-pass" placeholder="demo"></div>
         <div><label for="c-lista">Lista de precios</label>
@@ -81,10 +80,10 @@
     <section class="panel" id="tab-import">
       <h2>Actualizar la lista desde un CSV</h2>
       <p class="meta" style="margin:8px 0 16px">Columnas: codigo, nombre, marca, rubro, precio_mostrador, stock, unidad. Si el código ya existe, se actualiza; si no, se agrega. Todo queda en este navegador.</p>
-      <p style="margin-bottom:14px"><a class="btn btn-ghost btn-sm" href="data/lista-ejemplo.csv" download>Bajar CSV de ejemplo</a></p>
+      <p style="margin-bottom:14px"><a class="btn btn-ghost btn-sm" href="data/lista-ejemplo.csv" download>Bajar CSV de ejemplo</a> <span class="hint" style="margin-left:8px">Demo: todo queda en este navegador.</span></p>
       <div class="drop" id="drop">
         <p>Arrastrá el archivo acá o elegilo</p>
-        <input id="csv-file" type="file" accept=".csv,text/csv" style="margin:12px auto">
+        <input id="csv-file" type="file" accept=".csv,text/csv" style="margin:12px auto;display:block">
       </div>
       <p class="meta" id="import-msg" style="margin:12px 0"></p>
       <div class="table-wrap">

@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Liña de albañil 50 m">
-  <rect width="160" height="160" rx="18" fill="#242424"/>
-  <circle cx="41" cy="50" r="50" fill="#90a4ae" opacity="0.12"/>
-  <rect x="36" y="40" width="88" height="64" rx="10" fill="#90a4ae" transform="rotate(35 80 72)"/><rect x="48" y="52" width="64" height="40" rx="6" fill="#242424" stroke="#e8a317" stroke-width="3"/><text x="12" y="150" font-family="ui-monospace, monospace" font-size="9" fill="#e8a317" opacity="0.85">FER-LIN-50</text>
-</svg>

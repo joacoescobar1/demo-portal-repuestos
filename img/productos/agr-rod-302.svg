@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Rodamiento 30208 cónico">
-  <rect width="160" height="160" rx="18" fill="#1a2a1c"/>
-  <circle cx="46" cy="71" r="50" fill="#7cb342" opacity="0.12"/>
-  <rect x="36" y="40" width="88" height="64" rx="10" fill="#7cb342" transform="rotate(45 80 72)"/><rect x="48" y="52" width="64" height="40" rx="6" fill="#1a2a1c" stroke="#c4d59a" stroke-width="3"/><text x="12" y="150" font-family="ui-monospace, monospace" font-size="9" fill="#c4d59a" opacity="0.85">AGR-ROD-302</text>
-</svg>

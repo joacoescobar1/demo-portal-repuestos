@@ -7,7 +7,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 8500,
     "stock": 42,
     "unidad": "unid.",
-    "imagen": "img/productos/fil-ace-160.svg"
+    "imagen": "img/fotos/filtro-aceite.webp"
   },
   {
     "codigo": "FIL-ACE-20D",
@@ -17,7 +17,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 11200,
     "stock": 28,
     "unidad": "unid.",
-    "imagen": "img/productos/fil-ace-20d.svg"
+    "imagen": "img/fotos/filtro-aceite.webp"
   },
   {
     "codigo": "FIL-AIR-GOL",
@@ -27,7 +27,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 9800,
     "stock": 35,
     "unidad": "unid.",
-    "imagen": "img/productos/fil-air-gol.svg"
+    "imagen": "img/fotos/filtro-aire.webp"
   },
   {
     "codigo": "FIL-CAB-UNI",
@@ -37,7 +37,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 12900,
     "stock": 22,
     "unidad": "unid.",
-    "imagen": "img/productos/fil-cab-uni.svg"
+    "imagen": "img/fotos/filtro-aire.webp"
   },
   {
     "codigo": "FIL-COM-D20",
@@ -47,7 +47,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 15400,
     "stock": 16,
     "unidad": "unid.",
-    "imagen": "img/productos/fil-com-d20.svg"
+    "imagen": "img/fotos/filtro-comb.webp"
   },
   {
     "codigo": "PAS-DEL-GOL",
@@ -57,7 +57,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 38900,
     "stock": 18,
     "unidad": "juego",
-    "imagen": "img/productos/pas-del-gol.svg"
+    "imagen": "img/fotos/freno-caliper.webp"
   },
   {
     "codigo": "PAS-TRA-COR",
@@ -67,7 +67,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 45200,
     "stock": 11,
     "unidad": "juego",
-    "imagen": "img/productos/pas-tra-cor.svg"
+    "imagen": "img/fotos/freno-caliper.webp"
   },
   {
     "codigo": "DIS-DEL-UNA",
@@ -77,7 +77,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 27800,
     "stock": 14,
     "unidad": "unid.",
-    "imagen": "img/productos/dis-del-una.svg"
+    "imagen": "img/fotos/freno-disco.webp"
   },
   {
     "codigo": "LIQ-FRE-DOT",
@@ -87,7 +87,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 6200,
     "stock": 60,
     "unidad": "unid.",
-    "imagen": "img/productos/liq-fre-dot.svg"
+    "imagen": "img/fotos/aceite-chorro.webp"
   },
   {
     "codigo": "BUJ-IR-4PK",
@@ -97,7 +97,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 24600,
     "stock": 20,
     "unidad": "kit",
-    "imagen": "img/productos/buj-ir-4pk.svg"
+    "imagen": "img/fotos/bujia.webp"
   },
   {
     "codigo": "BUJ-CO-4PK",
@@ -107,7 +107,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 8900,
     "stock": 48,
     "unidad": "kit",
-    "imagen": "img/productos/buj-co-4pk.svg"
+    "imagen": "img/fotos/bujias.webp"
   },
   {
     "codigo": "COR-AUX-6PK",
@@ -117,7 +117,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 13400,
     "stock": 25,
     "unidad": "unid.",
-    "imagen": "img/productos/cor-aux-6pk.svg"
+    "imagen": "img/fotos/correa.webp"
   },
   {
     "codigo": "COR-DIS-127",
@@ -127,7 +127,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 29800,
     "stock": 9,
     "unidad": "unid.",
-    "imagen": "img/productos/cor-dis-127.svg"
+    "imagen": "img/fotos/distribucion.webp"
   },
   {
     "codigo": "TEN-COR-UNI",
@@ -137,7 +137,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 22100,
     "stock": 7,
     "unidad": "unid.",
-    "imagen": "img/productos/ten-cor-uni.svg"
+    "imagen": "img/fotos/tensor.webp"
   },
   {
     "codigo": "AMO-DEL-PAL",
@@ -147,7 +147,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 67400,
     "stock": 8,
     "unidad": "unid.",
-    "imagen": "img/productos/amo-del-pal.svg"
+    "imagen": "img/fotos/amortiguadores.webp"
   },
   {
     "codigo": "AMO-TRA-GOL",
@@ -157,7 +157,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 51200,
     "stock": 10,
     "unidad": "unid.",
-    "imagen": "img/productos/amo-tra-gol.svg"
+    "imagen": "img/fotos/amortiguador.webp"
   },
   {
     "codigo": "RES-DEL-COR",
@@ -167,7 +167,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 33800,
     "stock": 6,
     "unidad": "unid.",
-    "imagen": "img/productos/res-del-cor.svg"
+    "imagen": "img/fotos/resorte.webp"
   },
   {
     "codigo": "ROT-DIR-UNI",
@@ -177,7 +177,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 18700,
     "stock": 15,
     "unidad": "unid.",
-    "imagen": "img/productos/rot-dir-uni.svg"
+    "imagen": "img/fotos/rotula.webp"
   },
   {
     "codigo": "BAT-12-75A",
@@ -187,7 +187,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 118900,
     "stock": 12,
     "unidad": "unid.",
-    "imagen": "img/productos/bat-12-75a.svg"
+    "imagen": "img/fotos/bateria.webp"
   },
   {
     "codigo": "BAT-12-45A",
@@ -197,7 +197,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 89400,
     "stock": 9,
     "unidad": "unid.",
-    "imagen": "img/productos/bat-12-45a.svg"
+    "imagen": "img/fotos/bateria2.webp"
   },
   {
     "codigo": "KIT-EMB-1P6",
@@ -207,7 +207,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 142500,
     "stock": 5,
     "unidad": "kit",
-    "imagen": "img/productos/kit-emb-1p6.svg"
+    "imagen": "img/fotos/embrague.webp"
   },
   {
     "codigo": "ROD-RUE-620",
@@ -217,7 +217,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 16300,
     "stock": 24,
     "unidad": "unid.",
-    "imagen": "img/productos/rod-rue-620.svg"
+    "imagen": "img/fotos/rodamiento.webp"
   },
   {
     "codigo": "RAD-ALU-GOL",
@@ -227,7 +227,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 97800,
     "stock": 4,
     "unidad": "unid.",
-    "imagen": "img/productos/rad-alu-gol.svg"
+    "imagen": "img/fotos/motor.webp"
   },
   {
     "codigo": "BOM-AGU-UNA",
@@ -237,7 +237,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 41200,
     "stock": 8,
     "unidad": "unid.",
-    "imagen": "img/productos/bom-agu-una.svg"
+    "imagen": "img/fotos/bomba.webp"
   },
   {
     "codigo": "TER-82C-UNI",
@@ -247,7 +247,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 7600,
     "stock": 30,
     "unidad": "unid.",
-    "imagen": "img/productos/ter-82c-uni.svg"
+    "imagen": "img/fotos/termostato.webp"
   },
   {
     "codigo": "ACE-SYN-5W4",
@@ -257,7 +257,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 28900,
     "stock": 40,
     "unidad": "bidón",
-    "imagen": "img/productos/ace-syn-5w4.svg"
+    "imagen": "img/fotos/aceite-bidon.webp"
   },
   {
     "codigo": "ACE-SEM-15W",
@@ -267,7 +267,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 18400,
     "stock": 55,
     "unidad": "bidón",
-    "imagen": "img/productos/ace-sem-15w.svg"
+    "imagen": "img/fotos/aceite-chorro.webp"
   },
   {
     "codigo": "ESC-ESC-500",
@@ -277,7 +277,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 9200,
     "stock": 33,
     "unidad": "par",
-    "imagen": "img/productos/esc-esc-500.svg"
+    "imagen": "img/fotos/estanteria.webp"
   },
   {
     "codigo": "MOT-CAD-428",
@@ -287,7 +287,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 15600,
     "stock": 21,
     "unidad": "unid.",
-    "imagen": "img/productos/mot-cad-428.svg"
+    "imagen": "img/fotos/cadena.webp"
   },
   {
     "codigo": "MOT-KIT-TRA",
@@ -297,7 +297,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 24800,
     "stock": 14,
     "unidad": "kit",
-    "imagen": "img/productos/mot-kit-tra.svg"
+    "imagen": "img/fotos/kit-transmision.webp"
   },
   {
     "codigo": "MOT-PAS-CBR",
@@ -307,7 +307,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 8900,
     "stock": 26,
     "unidad": "juego",
-    "imagen": "img/productos/mot-pas-cbr.svg"
+    "imagen": "img/fotos/moto-freno.webp"
   },
   {
     "codigo": "MOT-ACE-20W",
@@ -317,7 +317,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 6400,
     "stock": 70,
     "unidad": "unid.",
-    "imagen": "img/productos/mot-ace-20w.svg"
+    "imagen": "img/fotos/aceite-moto.webp"
   },
   {
     "codigo": "MOT-FIL-125",
@@ -327,7 +327,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 3200,
     "stock": 45,
     "unidad": "unid.",
-    "imagen": "img/productos/mot-fil-125.svg"
+    "imagen": "img/fotos/filtro-aceite.webp"
   },
   {
     "codigo": "MOT-BUD-IRI",
@@ -337,7 +337,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 4100,
     "stock": 38,
     "unidad": "unid.",
-    "imagen": "img/productos/mot-bud-iri.svg"
+    "imagen": "img/fotos/bujia.webp"
   },
   {
     "codigo": "MOT-CAM-18",
@@ -347,7 +347,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 7800,
     "stock": 19,
     "unidad": "unid.",
-    "imagen": "img/productos/mot-cam-18.svg"
+    "imagen": "img/fotos/camaras.webp"
   },
   {
     "codigo": "MOT-CUB-110",
@@ -357,7 +357,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 45600,
     "stock": 7,
     "unidad": "unid.",
-    "imagen": "img/productos/mot-cub-110.svg"
+    "imagen": "img/fotos/cubierta.webp"
   },
   {
     "codigo": "MOT-MAN-HID",
@@ -367,7 +367,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 5400,
     "stock": 16,
     "unidad": "unid.",
-    "imagen": "img/productos/mot-man-hid.svg"
+    "imagen": "img/fotos/manguera-freno.webp"
   },
   {
     "codigo": "MOT-BAT-5AH",
@@ -377,7 +377,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 19800,
     "stock": 11,
     "unidad": "unid.",
-    "imagen": "img/productos/mot-bat-5ah.svg"
+    "imagen": "img/fotos/bateria2.webp"
   },
   {
     "codigo": "AGR-COR-B68",
@@ -387,7 +387,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 21200,
     "stock": 18,
     "unidad": "unid.",
-    "imagen": "img/productos/agr-cor-b68.svg"
+    "imagen": "img/fotos/correa.webp"
   },
   {
     "codigo": "AGR-COR-C90",
@@ -397,7 +397,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 26800,
     "stock": 12,
     "unidad": "unid.",
-    "imagen": "img/productos/agr-cor-c90.svg"
+    "imagen": "img/fotos/correa.webp"
   },
   {
     "codigo": "AGR-FIL-HID",
@@ -407,7 +407,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 19400,
     "stock": 10,
     "unidad": "unid.",
-    "imagen": "img/productos/agr-fil-hid.svg"
+    "imagen": "img/fotos/filtro-aceite.webp"
   },
   {
     "codigo": "AGR-FIL-COM",
@@ -417,7 +417,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 8700,
     "stock": 20,
     "unidad": "unid.",
-    "imagen": "img/productos/agr-fil-com.svg"
+    "imagen": "img/fotos/filtro-comb.webp"
   },
   {
     "codigo": "AGR-MAN-1IN",
@@ -427,7 +427,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 6900,
     "stock": 80,
     "unidad": "m",
-    "imagen": "img/productos/agr-man-1in.svg"
+    "imagen": "img/fotos/manguera-hid.webp"
   },
   {
     "codigo": "AGR-ROD-302",
@@ -437,7 +437,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 14700,
     "stock": 22,
     "unidad": "unid.",
-    "imagen": "img/productos/agr-rod-302.svg"
+    "imagen": "img/fotos/rodamiento-conico.webp"
   },
   {
     "codigo": "AGR-GRA-400",
@@ -447,7 +447,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 4800,
     "stock": 64,
     "unidad": "unid.",
-    "imagen": "img/productos/agr-gra-400.svg"
+    "imagen": "img/fotos/guantes.webp"
   },
   {
     "codigo": "AGR-PIN-CAT",
@@ -457,7 +457,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 6200,
     "stock": 27,
     "unidad": "unid.",
-    "imagen": "img/productos/agr-pin-cat.svg"
+    "imagen": "img/fotos/hidraulico.webp"
   },
   {
     "codigo": "AGR-ACE-HID",
@@ -467,7 +467,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 54300,
     "stock": 8,
     "unidad": "balde",
-    "imagen": "img/productos/agr-ace-hid.svg"
+    "imagen": "img/fotos/aceite-bidon.webp"
   },
   {
     "codigo": "AGR-RET-55",
@@ -477,7 +477,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 2100,
     "stock": 50,
     "unidad": "unid.",
-    "imagen": "img/productos/agr-ret-55.svg"
+    "imagen": "img/fotos/reten.webp"
   },
   {
     "codigo": "FER-TOR-M8",
@@ -487,7 +487,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 3900,
     "stock": 90,
     "unidad": "caja",
-    "imagen": "img/productos/fer-tor-m8.svg"
+    "imagen": "img/fotos/tornillos.webp"
   },
   {
     "codigo": "FER-TUE-M8",
@@ -497,7 +497,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 2400,
     "stock": 110,
     "unidad": "caja",
-    "imagen": "img/productos/fer-tue-m8.svg"
+    "imagen": "img/fotos/tuercas.webp"
   },
   {
     "codigo": "FER-PRE-200",
@@ -507,7 +507,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 1800,
     "stock": 75,
     "unidad": "bolsa",
-    "imagen": "img/productos/fer-pre-200.svg"
+    "imagen": "img/fotos/precintos.webp"
   },
   {
     "codigo": "FER-SIL-300",
@@ -517,7 +517,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 4100,
     "stock": 36,
     "unidad": "unid.",
-    "imagen": "img/productos/fer-sil-300.svg"
+    "imagen": "img/fotos/estante-taller.webp"
   },
   {
     "codigo": "FER-CIN-19",
@@ -527,7 +527,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 900,
     "stock": 140,
     "unidad": "unid.",
-    "imagen": "img/productos/fer-cin-19.svg"
+    "imagen": "img/fotos/herramientas.webp"
   },
   {
     "codigo": "FER-GUA-NIT",
@@ -537,7 +537,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 2600,
     "stock": 48,
     "unidad": "par",
-    "imagen": "img/productos/fer-gua-nit.svg"
+    "imagen": "img/fotos/guantes.webp"
   },
   {
     "codigo": "FER-LIN-50",
@@ -547,7 +547,7 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 3200,
     "stock": 22,
     "unidad": "unid.",
-    "imagen": "img/productos/fer-lin-50.svg"
+    "imagen": "img/fotos/tablero.webp"
   },
   {
     "codigo": "FER-GRA-MET",
@@ -557,6 +557,6 @@ window.RDN_PRODUCTS = [
     "precio_mostrador": 2100,
     "stock": 40,
     "unidad": "caja",
-    "imagen": "img/productos/fer-gra-met.svg"
+    "imagen": "img/fotos/tornillos2.webp"
   }
 ];

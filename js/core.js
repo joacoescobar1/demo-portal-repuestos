@@ -2,7 +2,7 @@
 (function (w) {
   const KEYS = {
     session: "rdn-session",
-    products: "rdn-products",
+    products: "rdn-products-v2",
     clients: "rdn-clients",
     rates: "rdn-rates",
     cart: "rdn-cart"
@@ -15,8 +15,8 @@
   };
 
   const DEFAULT_USERS = [
-    { usuario: "taller", password: "demo", nombre: "Taller San Lorenzo (ficticio)", rol: "cliente", lista: "taller" },
-    { usuario: "mayorista", password: "demo", nombre: "Distribuidora Pampa (ficticia)", rol: "cliente", lista: "mayorista" },
+    { usuario: "taller", password: "demo", nombre: "Taller San Lorenzo", rol: "cliente", lista: "taller" },
+    { usuario: "mayorista", password: "demo", nombre: "Distribuidora Pampa", rol: "cliente", lista: "mayorista" },
     { usuario: "admin", password: "demo", nombre: "Dueño · Repuestos del Norte", rol: "admin", lista: "mostrador" }
   ];
 
@@ -157,7 +157,7 @@
     const updated = [];
     incoming.forEach((row) => {
       const prev = map.get(row.codigo);
-      const imagen = (prev && prev.imagen) || row.imagen || "img/productos/fil-ace-160.svg";
+      const imagen = (prev && prev.imagen) || row.imagen || "img/fotos/estanteria.webp";
       const next = { ...prev, ...row, imagen };
       map.set(row.codigo, next);
       if (prev) updated.push(row.codigo);
