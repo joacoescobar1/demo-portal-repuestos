@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Video · Portal de precios para casas de repuestos · Nodo Ventas</title>
+  <meta name="description" content="Mirá en un minuto cómo queda un portal de precios: cada cliente entra con su usuario, ve su lista con foto y manda el pedido por WhatsApp. Demo de Nodo Ventas.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F6F7FB">
+  <link rel="icon" href="../img/nodo/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Geist:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nodo.css">
+</head>
+<body class="nv">
+  <header class="nv-header">
+    <div class="nv-wrap">
+      <a class="nv-logo" href="../oferta/"><img src="../img/nodo/nodo-ventas-logo.svg" alt="Nodo Ventas" width="182" height="30"></a>
+      <nav class="nv-nav">
+        <a class="nv-hide-sm" href="../">Ver la demo</a>
+        <a class="nv-btn nv-btn-primary" href="mailto:nodoventas.ar@gmail.com?subject=Portal%20de%20precios%20para%20mi%20negocio">Escribinos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="nv-watch">
+    <div class="nv-wrap">
+      <h1>Que cada cliente vea <span class="nv-mark">su precio</span>, y nadie el de al lado.</h1>
+      <p class="nv-lead">Un video corto de la demo: el taller y el mayorista entran con su usuario, ven su lista con foto y stock, y mandan el pedido armado por WhatsApp.</p>
+      <div class="nv-player">
+        <video src="nodo_ventas_portal_repuestos_v2_9x16.mp4" poster="nodo_ventas_portal_repuestos_v2_poster.jpg" controls playsinline webkit-playsinline preload="metadata" title="Video de la demo Repuestos del Norte, hecha por Nodo Ventas"></video>
+      </div>
+      <div class="nv-cta-row">
+        <a class="nv-btn nv-btn-primary" href="../">Probar la demo</a>
+        <a class="nv-btn nv-btn-line" href="../oferta/">Ver la oferta</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="nv-footer">
+    <div class="nv-wrap">
+      <img src="../img/nodo/nodo-ventas-logo.svg" alt="Nodo Ventas" width="146" height="24">
+      <p class="nv-disclaimer">Repuestos del Norte es un negocio de ficción creado por Nodo Ventas como demo. Contacto: nodoventas.ar@gmail.com</p>
+    </div>
+  </footer>
+  <script>
+    const h = document.querySelector(".nv-header");
+    addEventListener("scroll", () => h.classList.toggle("scrolled", scrollY > 8), { passive: true });
+  </script>
+</body>
+</html>

@@ -75,6 +75,8 @@ p { margin: 0; }
 .landing-facts { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 26px; padding: 0; list-style: none; font-weight: 600; font-size: 15px; }
 .landing-facts li { display: flex; align-items: center; gap: 8px; }
 .landing-facts li::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--amber); transform: rotate(45deg); }
+.landing-photo .hero-video { width: min(100%, 320px); aspect-ratio: 9 / 16; margin: 22px 0 8px; border-radius: 22px; overflow: hidden; background: #000; box-shadow: 0 28px 60px -18px rgba(0,0,0,.65), 0 0 0 1px rgba(255,255,255,.12); }
+.landing-photo .hero-video video { width: 100%; height: 100%; display: block; object-fit: contain; background: #000; }
 @keyframes settle { from { transform: scale(1.06); } }
 .landing-form { display: flex; flex-direction: column; justify-content: center; padding: 40px clamp(20px, 5vw, 72px); background: var(--white); }
 .login-card { width: min(420px, 100%); margin-inline: auto; }
@@ -93,7 +95,8 @@ p { margin: 0; }
 .chip b { font-size: 15px; } .chip span { font-size: 13.5px; color: var(--soft); }
 @media (max-width: 900px) {
   .landing { grid-template-columns: 1fr; }
-  .landing-photo { min-height: 72svh; }
+  .landing-photo { min-height: 0; }
+  .landing-photo .hero-video { width: min(100%, calc(68svh * 9 / 16), 380px); margin: 20px auto 16px; }
 }
 
 .band { padding: 88px 0; }
